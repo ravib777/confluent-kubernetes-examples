@@ -125,10 +125,10 @@ kubectl create secret generic oidccredential \
 
 ## Provide OAuth authentication credentials
 We are providing external access using Oauth (+mtls) hence for all components hence we need to provide oauth credentials as well.
-* Create a Kubernetes secret object for jass config secret
+* Create a Kubernetes secret object for jaas config secret
 
 ```
-kubectl create secret generic oauth-jass \
+kubectl create secret generic oauth-jaas \
 --from-file=oauth.txt=$TUTORIAL_HOME/oidcClientSecret.txt \
 -n confluent
 ```
