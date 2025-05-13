@@ -192,6 +192,7 @@ kubectl delete confluentrolebinding --all -n confluent
 kubectl delete -f $TUTORIAL_HOME/confluent-platform.yaml -n confluent
 kubectl delete secret mds-token -n confluent
 kubectl delete secret oidccredential -n confluent
+kubectl delete secret oauth-jaas -n confluent
 kubectl delete secret tls-kafka tls-connect tls-schemaregistry tls-kafkarestproxy tls-controlcenter --namespace confluent
 kubectl delete -f $TUTORIAL_HOME/keycloak.yaml
 helm delete operator -n confluent
